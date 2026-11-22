@@ -1,0 +1,8 @@
+* text=auto
+*.md text eol=lf
+*.psyexp text eol=lf
+*.py text eol=lf
+*.xlsx binary
+*.jpg binary
+*.JPG binary
+*.png binary

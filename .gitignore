@@ -1,0 +1,34 @@
+# Local participant and pilot output (at any experiment level)
+data/
+results/
+*.psydat
+*.log
+*.hdf5
+
+# PsychoPy-generated run files and browser runtime folders
+*_lastrun.py
+*_lastrun.js
+html/
+lib/
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Editor, spreadsheet lock, and operating-system files
+.vscode/
+.idea/
+*.bak
+*.tmp
+*~
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local third-party picture library: permission to redistribute is unconfirmed
+/experiments/loneliness-image-induction/images/
