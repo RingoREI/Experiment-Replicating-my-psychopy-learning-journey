@@ -9,10 +9,9 @@ These are learning exercises. A working program does not by itself establish a v
 | Exercise | Repository status | What I practised |
 | --- | --- | --- |
 | [Stroop](experiments/stroop/) | Builder source and condition table available | Randomized trials, color-word stimuli, keyboard responses, accuracy, and reaction times |
-| Loneliness induction draft with an image task | Local draft reviewed; files not published yet | Group assignment, forms, feedback, recall instructions, and picture presentation |
-| Interoception / exteroception | Planned addition; no files published here | Trial structure and, eventually, integration with physiological recordings |
+| Early loneliness induction draft | Historical learning exercise; assessed but not uploaded | First attempts at group assignment, forms, feedback, recall instructions, and picture presentation |
 
-The [upload review](docs/upload-review.md) explains what can be shared from the local loneliness exercise and what still needs work. That draft combines false feedback, autobiographical recall instructions, and image-based perspective-taking in one flow. It is not a standalone image-only task, and it is not included in this upload.
+I first built the loneliness draft around **February 2025**, shortly after starting to learn PsychoPy. It combines false feedback, autobiographical recall instructions, and image-based perspective-taking in one flow, with substantial design and implementation limitations. In particular, its questionnaire handling does not reflect how I implement questionnaires in later work. The [review notes](docs/upload-review.md) document this early attempt; its files are not published here, and a release is not currently planned.
 
 ## Repository structure
 
@@ -32,7 +31,7 @@ The [upload review](docs/upload-review.md) explains what can be shared from the 
 
 Each exercise gets its own folder under `experiments/`, with a short English README, an editable `.psyexp` file, and the condition tables it needs. Keep small tables beside the Builder file so relative paths remain portable. Add a `stimuli/` subfolder when an exercise has distributable images or sounds. Generated participant output belongs in a local `data/` folder and is ignored by Git.
 
-Add shared utilities only when more than one exercise actually needs them. Keep experiment-specific notes in the exercise README and repository-wide decisions in `docs/`. Future loneliness and interoception exercises can follow the same pattern without adding empty placeholder projects now.
+Add shared utilities only when more than one exercise actually needs them. Keep experiment-specific notes in the exercise README and repository-wide decisions in `docs/`. Any future public exercises can follow the same pattern.
 
 ## Run the Stroop exercise
 
@@ -51,8 +50,8 @@ The participant-facing text in the original exercise is in Chinese. Repository d
 
 The desktop originals are preserved. This repository contains a curated copy of the Stroop source and conditions, rather than the desktop folder's run history.
 
-## Learning goals
+## About this archive
 
-I started with Stroop to understand the basic Builder workflow, then explored forms, random assignment, and image presentation. My next goals are to make the image-based draft reproducible and to document an interoception task with clearly stated hardware requirements. ECG-based feedback and MEG synchronization remain future work for this repository.
+I started with Stroop to understand the basic Builder workflow, then explored forms, random assignment, and image presentation. This archive records selected steps in that learning process, including the limitations of early attempts. Later research implementations are outside the scope of this public archive.
 
 Feedback on the code, documentation, and experimental design is welcome.

@@ -12,9 +12,11 @@ The table contains nine color-word combinations, repeated twice by the experimen
 
 Validation: the copied Builder source is byte-identical to the desktop original. Every workbook ZIP entry other than the author-metadata XML is unchanged. The project was successfully compiled to Python with PsychoPy **2025.2.4**, and the generated Python passed a syntax check. The compiler reported a missing monitor specification and created a temporary one; display calibration, timing, font rendering, and participant interaction still require a local pilot. No participant task was launched during this review.
 
-## Loneliness draft: assessed, not uploaded
+## Early loneliness draft: historical context
 
-**Recommendation:** it can become a documented educational source release after cleanup. Do not upload the desktop folder unchanged. Keep the third-party image library and all participant output out of the public repository.
+The author first built this exercise around **February 2025**, shortly after beginning to learn PsychoPy. It is an early programming attempt with substantial design and implementation limitations. Its questionnaire implementation does not represent the author's later work.
+
+**Publication status:** assessed, not uploaded; no release is currently planned. The review below records the state of this historical draft. It is not a commitment to repair or publish it. Later research implementations are outside this review and the public archive.
 
 ### What the program actually does
 
@@ -26,10 +28,10 @@ This is the local draft that includes the image exercise described in the origin
 
 ### Materials and publication boundaries
 
-| Material | Proposed treatment |
+| Material | Requirements if this early draft is ever shared |
 | --- | --- |
-| Editable `.psyexp` | Publish a reviewed, portable copy with a limitations section |
-| `A_trials.xlsx`, `B_trials.xlsx` | Publish after metadata removal and exact filename checks |
+| Editable `.psyexp` | Review portability and include a limitations section |
+| `A_trials.xlsx`, `B_trials.xlsx` | Remove author metadata and check exact filenames |
 | `formA.xlsx`, `formB.xlsx` | Review questionnaire provenance and reuse terms; remove author metadata before sharing |
 | `images/` | Keep local; link to the official dataset and document the small subset required |
 | `data/`, logs, `.psydat` | Keep local; these contain run-level responses and metadata |
@@ -43,7 +45,7 @@ Reference: Zheng, Z., Li, S., Mo, L., Chen, W., & Zhang, D. (2022). ISIEA: An im
 
 The four workbooks contain form definitions or trial conditions, not participant response records. Their Office author metadata contains a personal email address and should be stripped from publication copies. Preserve the desktop originals.
 
-### Before a source release
+### Issues to address if this draft is revisited
 
 1. Document the combined design and decide whether to retain it as a historical draft or split the image exercise into a separate demo.
 2. Resolve image filenames, supply download/setup instructions, and check questionnaire attribution and reuse terms.
@@ -53,4 +55,4 @@ The four workbooks contain form definitions or trial conditions, not participant
 
 The feedback is predetermined by random branch assignment, rather than a real prediction based on questionnaire answers. Any future participant-facing study needs an appropriate consent and debriefing procedure, including an explanation of that feedback. This draft should remain a programming exercise until its design and participant procedures have been reviewed.
 
-No files from the loneliness folder are included in this upload. The assessment is recorded here so the next import has a clear scope.
+No files from the loneliness folder are included in this upload. These notes document the early exercise without implying that it represents the author's current research code or that a future import is planned.
